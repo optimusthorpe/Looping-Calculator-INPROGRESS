@@ -6,6 +6,8 @@ public class Calculator
 	public static void main(String[] args)
 	{
 		// TODO Auto-generated method stub
+		while (true)
+		{
 		Scanner myCal = new Scanner(System.in);
 		// Ask for type of calculation
 		System.out.println("Please select the type of calculation: + OR - OR / OR *");
@@ -21,11 +23,10 @@ public class Calculator
 		
 
 		
-		/*while (true)
-		{
+		
 		char Response;
-		Response = myCal.next().charAt(0);
-			if (Response == 'Y' || Response == 'y')*/
+		Response = myCal.next().charAt(0);// Gets stuck at this line, doesn't go into switch statement
+			//if (Response == 'Y' || Response == 'y')
 			{
 				// Switch cases for different calculations
 				switch (calType)
@@ -33,8 +34,8 @@ public class Calculator
 				case "+":
 					System.out.println(a + b);
 					System.out.println("Would you like to continue? Y or N");
-					char Response;
-					Response = myCal.next().charAt(0);
+					//char Response;
+					//Response = myCal.next().charAt(0);
 					
 					System.out.println(Response);
 					break;
@@ -55,5 +56,4 @@ public class Calculator
 			}
 		}
 	}
-
-//}
+}
